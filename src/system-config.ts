@@ -1,13 +1,30 @@
 /***********************************************************************************************
  * User Configuration.
  **********************************************************************************************/
-/** Map relative paths to URLs. */
-const map: any = {
-};
+ /** Map relative paths to URLs. */
+ const map: any = {
+   /* ngrx/router begin */
+   '@ngrx': 'vendor/@ngrx',
+   'path-to-regexp': 'vendor/path-to-regexp',
+   'isarray': 'vendor/isarray',
+   'query-string': 'vendor/query-string',
+   'strict-uri-encode': 'vendor/strict-uri-encode',
+   'object-assign': 'vendor/object-assign'
+   /* ngrx/router end */
+ };
 
-/** User packages configuration. */
-const packages: any = {
-};
+ /** User packages configuration. */
+ const packages: any = {
+   /* ngrx/router begin */
+   '@ngrx/core': { main: 'index' },
+   '@ngrx/router': { main: 'index' },
+   'path-to-regexp': { main: 'index' },
+   'isarray': { main: 'index' },
+   'query-string': { main: 'index' },
+   'strict-uri-encode': { main: 'index' },
+   'object-assign': { main: 'index' }
+   /* ngrx/router end */
+ };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 /***********************************************************************************************
@@ -29,6 +46,7 @@ const barrels: string[] = [
   // App specific barrels.
   'app',
   'app/shared',
+  'app/home',
   /** @cli-barrel */
 ];
 
